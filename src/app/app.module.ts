@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 
 const myRoute : Routes=[
 
@@ -26,7 +27,11 @@ const myRoute : Routes=[
   {
     path : "search",
     component : SearchEmployeeComponent
-  }
+  },
+  {
+    path : "delete",
+    component : DeleteEmployeeComponent
+  },
 ]
 @NgModule({
   declarations: [
@@ -34,7 +39,8 @@ const myRoute : Routes=[
     AdminLoginComponent,
     AddEmployeeComponent,
     NavbarComponent,
-    SearchEmployeeComponent
+    SearchEmployeeComponent,
+    DeleteEmployeeComponent
    
     
   ],
