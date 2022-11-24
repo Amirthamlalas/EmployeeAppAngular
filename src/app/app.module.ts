@@ -9,6 +9,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const myRoute : Routes=[
 
@@ -32,6 +33,14 @@ const myRoute : Routes=[
     path : "delete",
     component : DeleteEmployeeComponent
   },
+  {
+    path : "view",
+    component : ViewEmployeeComponent
+  },
+  {
+    path : "logout",
+    component : AdminLoginComponent
+  }
 ]
 @NgModule({
   declarations: [
@@ -40,7 +49,8 @@ const myRoute : Routes=[
     AddEmployeeComponent,
     NavbarComponent,
     SearchEmployeeComponent,
-    DeleteEmployeeComponent
+    DeleteEmployeeComponent,
+    ViewEmployeeComponent
    
     
   ],
