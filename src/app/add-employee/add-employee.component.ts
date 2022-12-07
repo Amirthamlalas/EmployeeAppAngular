@@ -32,8 +32,14 @@ constructor(private api:ApiService){}
   console.log(data)
 
   this.api.addCourse(data).subscribe(
-    (response)=>{
+    (response:any)=>{
       console.log(response)
+      if (response.status="success") {
+        alert("employee added successfully")
+        
+      } else {
+        alert("something went wrong")
+      }
     }
   )
   }
