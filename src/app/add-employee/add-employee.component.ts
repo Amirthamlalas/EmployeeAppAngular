@@ -6,19 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent {
-  name=""
-  Designation=""
-  Phone=""
-  Salary=""
-
+  empcode=""
+  empname=""
+  designation=""
+  mobileno=""
+  salary=""
+  companyName=""
+  username=""
+  password=""
 
   readValue = ()=>
   {
-    let data : any ={
-      "name" : this.name,
-      "Designation" : this.Designation,
-      "Phone"  : this.Phone,
-      "Salary" : this.Salary
+    let data : any ={"empcode":this.empcode,
+      "empname" : this.empname,
+      "designation" : this.designation,
+      "mobileno"  : this.mobileno,
+      "salary" : this.salary,
+      "companyName":this.companyName,
+      "username":this.username,
+      "password":this.password
+
       
   }
   console.log(data)

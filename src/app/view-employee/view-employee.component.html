@@ -8,15 +8,21 @@
             <th scope="col">Designation</th>
             <th scope="col">Phone/th>
             <th scope="col">Salary</th>
+            <th scope="col">company Name</th>
+            <th scope="col">username</th>
+            
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let i of data">
-            <th scope="row">1</th>
-            <td>{{i.name}}</td>
-            <td>{{i.Designation}}</td>
-            <td>{{i.Phone}}</td>
-             <td>{{i.Salary}}</td>
+            <td>{{i.empcode}}</td>
+            <td>{{i.empname}}</td>
+            <td>{{i.designation}}</td>
+            <td>{{i.mobileno}}</td>
+             <td>{{i.salary}}</td>
+             <td>{{i.companyName}}</td>
+             <td>{{i.username}}</td>
+             
           </tr>
          
         </tbody>
