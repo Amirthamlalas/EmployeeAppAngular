@@ -20,4 +20,8 @@ export class ApiService {
   searchData=(dataToSend:any)=>{
     return this.http.post("http://localhost:8080/search",dataToSend)
   }
+
+  deleteData=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/delete",dataToSend)
+  }
 }

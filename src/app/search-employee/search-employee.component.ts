@@ -29,4 +29,20 @@ this.api.searchData(data).subscribe(
   }
 )
 }
+
+deleteBtnClick =(id:any)=>
+{
+  let data:any={"id":id}
+  this.api.deleteData(data).subscribe(
+    (response:any)=>{
+      console.log(response)
+      if (response.status=="success") {
+        alert("Deleted")
+        
+      } else {
+        alert("Something went wrong")
+      }
+    }
+  )
+}
 }
